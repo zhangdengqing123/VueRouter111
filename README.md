@@ -19,9 +19,11 @@ For detailed explanation on how things work, consult the [docs for vue-loader](h
 ps: Vue路由使用
 
   1.当你把vue-router引进来，我们需要做的是，将组件（components）映射到路由（routes）,然后告诉vue-router在哪里渲染它们。
+
   2.下面例子：
 
    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+   
    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
    <div id="vueRouter">
