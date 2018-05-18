@@ -22,11 +22,12 @@ ps: Vue路由使用
 
   2.下面例子：
 
-   <script src="https://unpkg.com/vue/dist/vue.js"></script>
-   
+  <p><script src="https://unpkg.com/vue/dist/vue.js"></script></p>
+
    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
-   <div id="vueRouter">
+  <pre><code>
+  	<div id="vueRouter">
        <h1>hello router</h1>
        <div>
          <!--使用 router-link组件导航-->
@@ -38,28 +39,28 @@ ps: Vue路由使用
        <!--将路由组件内容渲染到这里-->
        <router-view/>   
    </div>
-
+</code></pre>
 
 
   javascript里面编写路由入口
 
 
   
-   //定义一个路由
-   //每个路由映射到一个组件。其中"component"可以是通过 Vue.extend() 创建的构造器，或者只是一个组件配置的对象
+   *定义一个路由
+   *每个路由映射到一个组件。其中"component"可以是通过 Vue.extend() 创建的构造器，或者只是一个组件配置的对象
 
    const routes = [
       {path: '\home', component: Home},  
       {path: '\about', component: about}
    ]
 
-  //创建 router 实例，然后传入 'routes' 配置，你还可以配置参数，不过先么简单吧。
+  *创建 router 实例，然后传入 'routes' 配置，你还可以配置参数，不过先么简单吧。
 
   const router = new VueRouter({
     routes   //把routes传入进来
   })
 
- //创建挂载根实例
+ *创建挂载根实例
 
    new Vue({
      router
