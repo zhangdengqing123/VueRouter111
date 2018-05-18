@@ -22,8 +22,7 @@ ps: Vue路由使用
 
   2.下面例子：
 
-  <p><script src="https://unpkg.com/vue/dist/vue.js"></script></p>
-
+   <div><script src="https://unpkg.com/vue/dist/vue.js"></script></div>
    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
   	<div id="vueRouter">
@@ -40,7 +39,6 @@ ps: Vue路由使用
    </div>
 
   javascript里面编写路由入口
-
 
   
    *定义一个路由
@@ -65,21 +63,19 @@ ps: Vue路由使用
 
  //完成以后可以启动了
 
-
  命名路由
 
-    有时候，通过一个名称来标识一个路由显得更方便些，特别是在链接一个路由，或者是执行一些跳转的时候，你可以在创建Router实例的时候，
-
- 	在 routes 配置中给某个路由设置名称
+ 有时候，通过一个名称来标识一个路由显得更方便些，特别是在链接一个路由，或者是执行一些跳转的时候，你可以在创建Router实例的时候，
+ 在 routes 配置中给某个路由设置名称
 
  const router = new VueRouter({\<br>  
-   routes: [<br>  
-     {<br>  
-       path: 'home/:homeId',<br>  
-       name: 'home',<br>  
-       component: Home<br>  
-     }<br>  
-   ]<br>  
+   routes: [
+     { 
+       path: 'home/:homeId', 
+       name: 'home', 
+       component: Home
+     }
+   ] 
  })
 
  要链接到一个命名路由，可以给 router-link 的 to 属性传一个对象：
