@@ -26,7 +26,6 @@ ps: Vue路由使用
 
    <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 
-  <pre><code>
   	<div id="vueRouter">
        <h1>hello router</h1>
        <div>
@@ -39,8 +38,6 @@ ps: Vue路由使用
        <!--将路由组件内容渲染到这里-->
        <router-view/>   
    </div>
-</code></pre>
-
 
   javascript里面编写路由入口
 
