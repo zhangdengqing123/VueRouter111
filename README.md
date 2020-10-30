@@ -87,9 +87,3 @@ ps: Vue路由使用
   router.push({ name: 'home', params: { userId: 123 }})
 
   这两种方式都会把路由导航到 /home/123 路径.
-  1233333
-
-
-
-
-
